@@ -4,7 +4,7 @@ import invariant from 'invariant'
 export default (cb: any) => ({
   onError: (e: any) => {
     if (typeof cb === 'function') {
-      cb()
+      cb(e)
       return
     }
     if (typeof cb === 'undefined') {
