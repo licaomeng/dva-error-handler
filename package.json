@@ -1,0 +1,42 @@
+{
+  "name": "dva-error-handler",
+  "version": "1.0.0",
+  "description": "Dva plugin, Injects try-catch into Dva effects, also provides default handling method.",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint src --ext .js,.jsx,.tsx",
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/licaomeng/dva-error-handler.git"
+  },
+  "keywords": [
+    "dva",
+    "plugin",
+    "dva-plugin",
+    "error",
+    "handler"
+  ],
+  "author": "Messi Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/licaomeng/dva-error-handler/issues"
+  },
+  "homepage": "https://github.com/licaomeng/dva-error-handler#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.41",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.6"
+  },
+  "peerDependencies": {
+    "react": "16.x || 15.x",
+    "react-dom": "16.x || ^15.x"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4"
+  }
+}
